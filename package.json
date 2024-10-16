@@ -1,0 +1,21 @@
+{
+  "name": "react-parcel-and-appscript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "glogin": "clasp login --no-localhost",
+    "glogout":"clasp logout",
+    "gcreate": "clasp create --title 'New Project' --rootDir ./appScripts",
+    "gpush": "clasp push",
+    "gstart":"clasp push --watch",
+    "gpull": "clasp pull",
+    "gdeploy": "clasp deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  }
+}
