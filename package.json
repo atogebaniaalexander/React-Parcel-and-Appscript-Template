@@ -2,20 +2,29 @@
   "name": "react-parcel-and-appscript-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "glogin": "clasp login --no-localhost",
-    "glogout":"clasp logout",
-    "gcreate": "clasp create --title 'New Project' --rootDir ./appScripts",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title 'React-Appscript-Project' --rootDir ./appScripts",
     "gpush": "clasp push",
-    "gstart":"clasp push --watch",
+    "gstart": "clasp push --watch",
     "gpull": "clasp pull",
-    "gdeploy": "clasp deploy"
+    "gdeploy": "clasp deploy",
+    "start": "parcel src/index.html --dist-dir ./appScripts",
+    "build": "parcel build src/index.html --dist-dir ./appScripts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@google/clasp": "^2.4.2"
+    "@google/clasp": "^2.4.2",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@types/google-apps-script": "^1.0.84",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
